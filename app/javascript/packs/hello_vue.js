@@ -4,32 +4,28 @@
 // to the head of your layout file,
 // like app/views/layouts/application.html.erb.
 // All it does is render <div>Hello Vue</div> at the bottom of the page.
-import { createApp } from 'vue/dist/vue.esm-bundler.js'
+import { createApp } from 'vue'
 // import Vue from 'vue'
 import MyApp from '../app.vue'
 
 document.addEventListener('DOMContentLoaded', () => {
-	// const app = createApp({
- // MyApp
-	// })
+	const app = createApp(MyApp)
+	app.mount('#app')
+ 
 
-  // const app = new Vue({
-  //   render: h => h(App)
-  // }).$mount()
-  // document.body.appendChild(app.$el)
+// const Counter = {
+//   data() {
+//     return {
+//       counter: 0
+//     }
+//   }
+// }
+// createApp(Counter).mount('#counter')
 
-const Counter = {
-  data() {
-    return {
-      counter: 0
-    }
-  }
-}
-createApp(Counter).mount('#counter')
-
-// const mounted = app.mount('#app')
+ 
 
   console.log(app)
+  console.log( MyApp)
 })
 
 

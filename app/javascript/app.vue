@@ -1,16 +1,25 @@
 <template>
-  <div id="app">
-    <p>{{ message }}</p>
+  <div >
+    <p>{{message}}</p>
   </div>
 </template>
 
 <script>
+import { ref } from 'vue'
 export default {
-  data: function () {
-    return {
-      message: "Hello Vue!"
+  name: 'HelloWorld',
+    setup() {
+        const message = ref('Hello World')
+
+        return {
+          message
+        }
     }
-  }
+  // data() {
+  //   return {
+  //     mes: "ывмывмыв"
+  //   }
+  // }
 }
 </script>
 
