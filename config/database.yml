@@ -82,5 +82,5 @@ test:
 production:
   <<: *default
   database: nagovets_production
-  username: nagovets
+  username: deploy
   password: <%= ENV['NAGOVETS_DATABASE_PASSWORD'] %>
