@@ -9,7 +9,7 @@ import { ref } from 'vue'
 export default {
   name: 'HelloWorld',
     setup() {
-        const message = ref('Hello World')
+        const message = ref('Психолог Екатеринбург')
 
         return {
           message
@@ -25,7 +25,7 @@ export default {
 
 <style scoped>
 p {
-  font-size: 2em;
+  font-size: 1em;
   text-align: center;
 }
 </style>
