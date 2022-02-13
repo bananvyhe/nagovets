@@ -5,21 +5,21 @@
 </template>
 
 <script>
-// import { ref } from 'vue'
+import { ref } from 'vue'
 export default {
-  // name: 'HelloWorld',
-  //   setup() {
-  //       const message = ref('Психолог Екатеринбург')
+  name: 'HelloWorld',
+    setup() {
+        const message = ref('Психолог Екатеринбург')
 
-  //       return {
-  //         message
-  //       }
-  //   }
-  data() {
-    return {
-      message: "ывмывмыв"
+        return {
+          message
+        }
     }
-  }
+  // data() {
+  //   return {
+  //     message: "ывмывмыв"
+  //   }
+  // }
 }
 </script>
 
